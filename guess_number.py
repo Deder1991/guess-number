@@ -1,6 +1,10 @@
 import random
 counter = 0
-number = random.randint(1,100)
+number_min = input("請輸入數字最小值:")
+number_max = input("請輸入數字最大值:")
+number_min = int(number_min)
+number_max = int(number_max)
+number = random.randint(number_min,number_max)
 print(number)
 while True:
 	counter = counter + 1
